@@ -1,0 +1,46 @@
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 236, 210);
+    background-size: 20px 20px;
+    background-image:
+        linear-gradient(to right, rgb(219, 204, 186) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(219, 204, 186) 1px, transparent 1px);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+main#app-container {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: rgba(213, 177, 128, 0.5);
+}
+
+footer {
+    text-align: center;
+    margin: 1rem;
+    flex-shrink: 0;
+}
